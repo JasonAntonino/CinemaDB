@@ -22,7 +22,7 @@ CREATE TABLE bookings(
 	fk_customer_id INT NOT NULL,
 	fk_movie_id INT NOT NULL,
 	booking_date DATE NOT NULL,
-	booking_seat_amount BIT NOT NULL,
+	booking_seat_amount INT NOT NULL,
 	FOREIGN KEY(fk_customer_id) REFERENCES customers(customer_id),
 	FOREIGN KEY(fk_movie_id) REFERENCES movies(movie_id)
 );
